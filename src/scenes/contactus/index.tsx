@@ -26,7 +26,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
   }
 
   return (
-    <section id="contactus" className="mx-auto w-5/6 pt-24 pb-32">
+    <section id="contato" className="mx-auto w-5/6 pt-24 pb-32">
       <motion.div onViewportEnter={()=> setSelectedPage(SelectedPage.ContactUs)}>
         {/* Header */}
         <motion.div
@@ -41,7 +41,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
         }}
         >
           <HText>
-          <span className="text-primary-500">JOIN NOW</span> TO GET IN SHAPE
+          <span className="text-primary-500">COMECE AGORA</span> PARA ENTRAR EM FORMA!
           </HText>
           <p className="my-5">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem aliquam reprehenderit optio voluptatem necessitatibus natus reiciendis aspernatur et maiores deserunt placeat facilis dolores, suscipit neque saepe minima rerum, temporibus at!
@@ -69,7 +69,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
               <input 
               className={inputStyles}
               type="text" 
-              placeholder="NAME"
+              placeholder="NOME"
               {...register('name',{
                 required:true,
                 maxLength:100,
@@ -100,7 +100,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
               className={inputStyles}
               rows={4}
               cols={50}
-              placeholder="MESSAGE"
+              placeholder="MENSAGEM"
               {...register('message',{
                 required:true,
                 maxLength:2000,
@@ -116,7 +116,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
               type="submit"
               className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
               >
-                SUBMIT
+                ENVIAR
               </button>
             </form>
           </motion.div>

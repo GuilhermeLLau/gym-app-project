@@ -9,17 +9,17 @@ import ActionButton from '@/shared/ActionButton';
 const benefits: Array<BenefitType> = [
   {
     icon: <HomeModernIcon className='h-6 w-6'/>,
-    title:"State of the Art Facilities",
+    title:"Localização e Equipamento",
     description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, laboriosam magnam ipsa sunt explicabo itaque reprehenderit nostrum'
   },
   {
     icon: <UserGroupIcon className='h-6 w-6'/>,
-    title:"100's of Diverse Classes",
+    title:"Diversas Aulas Diferentes",
     description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, laboriosam magnam ipsa sunt explicabo itaque reprehenderit nostrum'
   },
   {
     icon: <AcademicCapIcon className='h-6 w-6'/>,
-    title:"Expert and Pro Trainers",
+    title:"Profissionais Capacitados",
     description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, laboriosam magnam ipsa sunt explicabo itaque reprehenderit nostrum'
   }
 ]
@@ -38,7 +38,7 @@ type Props = {
 const Benefits = ({setSelectedPage}: Props) => {
   return (
     <section 
-    id='benefits'
+    id='beneficios'
     className='mx-auto min-h-full w-5/6 py-20'
     >
       <motion.div
@@ -55,7 +55,7 @@ const Benefits = ({setSelectedPage}: Props) => {
             visible: {opacity:1,x:0},
             }}
         >
-          <HText>MORE THAN JUST A GYM.</HText>
+          <HText>MAIS DO QUE UMA ACADEMIA.</HText>
           <p className='my-5 text-sm'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, laboriosam magnam ipsa sunt explicabo itaque reprehenderit nostrum esse quos tempore quae cum veniam maxime, reiciendis iste eaque doloribus facilis error?
           </p>
@@ -102,8 +102,8 @@ const Benefits = ({setSelectedPage}: Props) => {
                   visible: {opacity:1, x: 0},
                   }}
                 >
-                  <HText>MILLIONS OF HAPPY MEMBERS GETTING{"  "}
-                  <span className='text-primary-500'>FIT.</span>
+                  <HText>MILHARES DE ALUNOS ATINGINDO SUAS{"  "}
+                  <span className='text-primary-500'>METAS.</span>
                   </HText>
                 </motion.div>
               </div>
@@ -130,7 +130,7 @@ const Benefits = ({setSelectedPage}: Props) => {
             <div className='relative mt-16'>
               <div className='before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles'>
                 <ActionButton setSelectedPage={setSelectedPage}>
-                  Join Now!
+                  Cadastre-se
                 </ActionButton>
               </div>
             </div>

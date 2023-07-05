@@ -11,32 +11,32 @@ import Class from './Class'
 
 const classes: Array<ClassType> = [
   {
-    name: "Weight Training Classes",
+    name: "Musculação",
     description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veritatis odio, ratione quas commodi est dolores debitis dolor aperiam nesciunt eaque quae eum odit architecto doloremque sapiente reprehenderit blanditiis iusto.',
     image: image1
   },
   {
-    name: "Weight Training Classes",
+    name: "Aeróbios",
     description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veritatis odio, ratione quas commodi est dolores debitis dolor aperiam nesciunt eaque quae eum odit architecto doloremque sapiente reprehenderit blanditiis iusto.',
     image: image2
   },
   {
-    name: "Weight Training Classes",
+    name: "Yoga e Alongamento",
     description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veritatis odio, ratione quas commodi est dolores debitis dolor aperiam nesciunt eaque quae eum odit architecto doloremque sapiente reprehenderit blanditiis iusto.',
     image: image3
   },
   {
-    name: "Weight Training Classes",
+    name: "Spinning",
     description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veritatis odio, ratione quas commodi est dolores debitis dolor aperiam nesciunt eaque quae eum odit architecto doloremque sapiente reprehenderit blanditiis iusto.',
     image: image4
   },
   {
-    name: "Weight Training Classes",
+    name: "Fit Dance",
     description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veritatis odio, ratione quas commodi est dolores debitis dolor aperiam nesciunt eaque quae eum odit architecto doloremque sapiente reprehenderit blanditiis iusto.',
     image: image5
   },
   {
-    name: "Weight Training Classes",
+    name: "Aulas de Luta",
     image: image6
   },
 ]
@@ -48,7 +48,7 @@ type Props = {
 
 const OurClasses = ({setSelectedPage}: Props) => {
   return (
-    <section id='ourclasses' className="w-full bg-primary-100 py-40">
+    <section id='nossasaulas' className="w-full bg-primary-100 py-40">
       <motion.div
       onViewportEnter={()=> setSelectedPage(SelectedPage.OurClasses)}
       >
@@ -64,7 +64,7 @@ const OurClasses = ({setSelectedPage}: Props) => {
         }}
         >
           <div className="md:w-3/5">
-            <HText>OUR CLASSES</HText>
+            <HText>NOSSAS AULAS</HText>
             <p className="py-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veritatis odio, ratione quas commodi est dolores debitis dolor aperiam nesciunt eaque quae eum odit architecto doloremque sapiente reprehenderit blanditiis iusto.
             </p>

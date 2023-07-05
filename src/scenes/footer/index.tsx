@@ -22,7 +22,7 @@ const Footer = ({}: Props) => {
           <p className='mt-5'>Massa orci askdusahd</p>
         </div>
         <div className='mt-16 basis-1/4 md:mt-0'>
-          <h4 className='font-bold'>Contact Us</h4>
+          <h4 className='font-bold'>Contato</h4>
           <p className='mt-5'>dolorum nesciunt provident quam</p>
           <p>(33)1234-5678</p>
         </div>

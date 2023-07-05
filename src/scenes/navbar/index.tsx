@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Logo from "@/assets/Logo.png";
+import GitHub from '@/assets/github.svg'
+import Linkedin from '@/assets/linkedin.svg'
 import Link from "./Link";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
@@ -13,6 +15,8 @@ type Props = {
 }
 
 const Navbar = ({isTopOfPage,selectedPage,setSelectedPage}: Props) => {
+  const gitUrl = 'https://github.com/GuilhermeLLau/gym-app-project'
+  const linkUrl = 'https://www.linkedin.com/in/guilhermelau/'
   const flexBetween = 'flex items-center justify-between'
   const isAboveMediumScreens = useMediaQuery('(min-width:1060px)');
   const [isMenuToggled,setIsMenuToggled] = useState<boolean>(false);
@@ -28,14 +32,16 @@ const Navbar = ({isTopOfPage,selectedPage,setSelectedPage}: Props) => {
           {isAboveMediumScreens ? (
           <div className={`${flexBetween} w-full`}>
             <div className={`${flexBetween} gap-8 text-sm`}>
-              <Link page='Home' selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link page='Benefits' selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link page='Our Classes' selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-              <Link page='Contact Us' selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link page='Inicio' selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link page='Beneficios' selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link page='Nossas Aulas' selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <Link page='Contato' selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <a href={gitUrl} target="_blank"><img src={GitHub} alt="" /></a>
+              <a href={linkUrl} target="_blank"><img src={Linkedin} alt="" /></a>
             </div>
             <div className={`${flexBetween} gap-8`}>
-              <p>Sign In</p>
-              <ActionButton setSelectedPage={setSelectedPage}>Become a member</ActionButton>
+              <p>Entrar</p>
+              <ActionButton setSelectedPage={setSelectedPage}>Cadastre-se</ActionButton>
             </div>
           </div>) : 
           (
@@ -62,6 +68,10 @@ const Navbar = ({isTopOfPage,selectedPage,setSelectedPage}: Props) => {
               <Link page='Benefits' selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link page='Our Classes' selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
               <Link page='Contact Us' selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+              <div className="flex justify-between w-3/5">
+              <a href={gitUrl} target="_blank"><img src={GitHub} alt="" /></a>
+              <a href={linkUrl} target="_blank"><img src={Linkedin} alt="" /></a>
+              </div>
             </div>
       </div>
       )}

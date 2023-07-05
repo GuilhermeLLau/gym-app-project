@@ -20,7 +20,7 @@ const Home = ({setSelectedPage}: Props) => {
 
   return (
     <section
-    id='home'
+    id='inicio'
     className='gap-16 bg-gray-20 py-10 md:h-full md:pb-0'
     >
       <motion.div 
@@ -60,14 +60,14 @@ const Home = ({setSelectedPage}: Props) => {
           }}
           >
             <ActionButton setSelectedPage={setSelectedPage}>
-              Join Now
+              Cadastre-se
               </ActionButton>
             <AnchorLink 
             className='text-sm font-bold text-primary-500 underline'
             onClick={()=>setSelectedPage(SelectedPage.ContactUs)}
             href={`#${SelectedPage.ContactUs}`}
             >
-              <p>Learn More</p>
+              <p>Saiba Mais</p>
             </AnchorLink>
           </motion.div>
         </div>
